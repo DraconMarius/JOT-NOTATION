@@ -83,8 +83,8 @@ const handleNoteDelete = (e) => {
   e.stopPropagation();
 
   const note = e.target;
-  const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
-
+  const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id; //now that the id is added, should be in the data-note attri in the html
+  //they are basically using the data attribute to store the whole note w/ id
   if (activeNote.id === noteId) {
     activeNote = {};
   }
