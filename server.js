@@ -10,8 +10,7 @@ SERVER
 - [X] routes to landing page
 - [X] routes to notes page
 - [X] API Routes for `GET/POST` notes from db
-- [ ] API Routes to `DELETE`
-
+- [X] API Routes to `DELETE`
 */
 
 
@@ -21,7 +20,7 @@ const path = require('path');
 const apiRoute = require('./routes');
 
 const app = express();
-const PORT = process.env.port || 3001
+const PORT = process.env.PORT || 3001
 
 app.use(express.static('public')) //root route to show index.html w/ resources
 app.use(express.urlencoded({ extended: true })); //middleware for parsing schtuff
