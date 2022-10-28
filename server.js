@@ -1,17 +1,15 @@
 /* 
-- [ ] Need a landing page before taken to the notes page
-- [ ] Note page that has saved notes on the left
+- [X] Need a landing page before taken to the notes page
+- [X] Note page that has saved notes on the left
 - [ ] Editor to name your Note and body on the right
 - [ ] Only when there are items in the notes field, a save button appear
-- [ ] Functional save button to append new note to app
+- [X] Functional save button to append new note to app
 - [ ] Existing Notes are recallable
 - [ ] Write Icon button to go back to editor
 SERVER 
 - [X] routes to landing page
-- [ ] routes to notes page
+- [X] routes to notes page
 - [ ] API Routes for `GET/POST` notes from db
-
-
 
 
 */

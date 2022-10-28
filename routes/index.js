@@ -1,6 +1,7 @@
 const express = require('express');
 const api = require('express').Router();
 const fs = require('fs');
+const { v4: uuidv4 } = require('uuid');
 
 //api/notes GET, readFile and response with saved notes obj
 api.get('/notes', (req, res) => {
@@ -19,14 +20,19 @@ api.post('/notes', (req, res) => {
             console.error(err);
         } else {
             const noteDB = JSON.parse(data); //parsed db data
-            noteDB.push(req.body); //push that data into the array
+            let newNotes = {
+                id: uuidv4(), //need special ID for recall in client side
+                title: req.body.title,
+                text: req.body.text,
+            }
+            noteDB.push(newNotes); //push that data into the array
             fs.writeFile('./db/db.json', JSON.stringify(noteDB, null, 3), (err) => //write the new file completely including the new note
                 err ? console.error(err) : console.log("Note Saved Sucessfully")
             )
         };
     });
 
-    res.send("sucessfully saved");
+    res.send("sucessfully saved"); //was getting stuck and not fullfilling the promise due to missing res param
 });
 
 
