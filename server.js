@@ -20,7 +20,7 @@ SERVER
 //express.js server
 const express = require('express');
 const path = require('path');
-// const apiRoute = require('./routes');
+const apiRoute = require('./routes');
 
 const app = express();
 const PORT = process.env.port || 3001
@@ -30,7 +30,7 @@ app.use(express.urlencoded({ extended: true })); //middleware for parsing schtuf
 app.use(express.json());
 
 //all api routes in `routes` folder
-// app.use('/api', apiRoute);
+app.use('/api', apiRoute);
 
 //homePage
 app.get('/', (req, res) =>
