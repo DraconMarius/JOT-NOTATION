@@ -4,7 +4,7 @@
 ***
 A simple note-taking application that is hosted on Heroku, that allows user to interact and store new notes that will persist even on reloads.
 
-![HEROKU DEPLOYED LINK](./assets/SAMPLE.md)
+[HEROKU DEPLOYED LINK](https://jot-notation-app.herokuapp.com)
 
 ***
 - [X] Existing Notes are recallable
@@ -28,8 +28,8 @@ I was asked to implement the express.js Routes that will allow user to initiate 
 
 ***
 ## Demo Links / Media
-*(feel free to click on the gif to go to a **video demo** in Google Drive!)*
-[<img src="./assets/demo.gif" alt='DeployedLink'>](https://drive.google.com/file/d/1SkrviuPiX8yZe3uZ8xRQ04ugSLAxy4Qe/view/) 
+*(feel free to click on the gif to go to a deployed version of the app)*
+[<img src="./assets/JOT-demo.gif" alt='DeployedLink'>](https://jot-notation-app.herokuapp.com) 
 
 ## Technologies Used
 > JavaScript
