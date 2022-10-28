@@ -94,6 +94,10 @@ dist
 # Serverless directories
 .serverless/
 
+#.DS_Store
+.DS_Store
+
+
 # FuseBox cache
 .fusebox/
 
