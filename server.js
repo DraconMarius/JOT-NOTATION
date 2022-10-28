@@ -19,7 +19,8 @@ SERVER
 
 //express.js server
 const express = require('express');
-const apiRoute = require('./routes');
+const path = require('path');
+// const apiRoute = require('./routes');
 
 const app = express();
 const PORT = process.env.port || 3001
@@ -29,12 +30,18 @@ app.use(express.urlencoded({ extended: true })); //middleware for parsing schtuf
 app.use(express.json());
 
 //all api routes in `routes` folder
-app.use('/api', api);
+// app.use('/api', apiRoute);
 
 //homePage
 app.get('/', (req, res) =>
     res.sendFile(path.join(__dirname, '/public/index.html'))
 );
+
+//notesPage
+app.get('/notes', (req, res) =>
+    res.sendFile(path.join(__dirname, '/public/notes.html'))
+);
+
 
 app.listen(PORT, () =>
     console.log(`APP Listening at http://localhost:${PORT}`));
