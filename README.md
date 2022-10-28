@@ -29,7 +29,7 @@ I was asked to implement the express.js Routes that will allow user to initiate 
 ***
 ## Demo Links / Media
 *(feel free to click on the gif to go to a deployed version of the app)*
-[<img src="./assets/JOT-demo.gif" alt='DeployedLink'>](https://jot-notation-app.herokuapp.com) 
+[<img src="./Assets/JOT-demo.gif" alt='DeployedLink'>](https://jot-notation-app.herokuapp.com) 
 
 ## Technologies Used
 > JavaScript
